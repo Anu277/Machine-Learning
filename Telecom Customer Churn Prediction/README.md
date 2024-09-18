@@ -80,7 +80,7 @@ The model is trained on the training dataset and predictions are made on both tr
 A Decision Tree Classifier is trained on the dataset and evaluated based on accuracy.
 ### K-Nearest Neighbors (KNN)
 KNN is implemented with the Elbow Method to find the optimal value for 'k'.
-### Model Evaluation
+## Model Evaluation
 Each model's performance is evaluated using the following metrics:
 
 - Accuracy: Measured on both training and test datasets.
