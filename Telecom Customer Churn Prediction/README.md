@@ -50,3 +50,50 @@ You can install the dependencies using the following command:
 
 ```bash
 pip install pandas numpy seaborn matplotlib scikit-learn
+```
+## Installation
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/customer-churn-prediction.git
+```
+Navigate to the project directory:
+
+```bash
+cd customer-churn-prediction
+```
+Install the required libraries as shown above.
+
+## Data Preprocessing
+Label Encoding: 
+Categorical features like 'International Plan', 'Voice Mail Plan', and 'Churn' are transformed into numerical representations using Label Encoding.
+Missing Values Check: The dataset is checked for missing values, though none were found in this case.
+
+## Exploratory Data Analysis
+Visualizations: The relationship between churn and various features like 'Total Day Minutes' is explored using bar plots to gain insights.
+
+## Machine Learning Models
+### Logistic Regression
+Logistic Regression is used as the initial model to predict churn.
+The model is trained on the training dataset and predictions are made on both training and test sets.
+### Decision Tree Classifier
+A Decision Tree Classifier is trained on the dataset and evaluated based on accuracy.
+### K-Nearest Neighbors (KNN)
+KNN is implemented with the Elbow Method to find the optimal value for 'k'.
+### Model Evaluation
+Each model's performance is evaluated using the following metrics:
+
+- Accuracy: Measured on both training and test datasets.
+- Confusion Matrix: To evaluate the true positives, true negatives, false positives, and false negatives.
+- Classification Report: Provides precision, recall, and F1 score.
+## Hyperparameter Tuning
+Grid Search is used to fine-tune hyperparameters for the KNN model.
+The optimal number of neighbors (k) is found to improve accuracy.
+
+## Results
+Logistic Regression, Decision Tree, and KNN models are evaluated.
+KNN with hyperparameter tuning yielded the best results based on accuracy.
+
+## Conclusion
+This project showcases how different machine learning algorithms can be applied to predict customer churn. The KNN model with tuned hyperparameters performed the best. Future improvements could include trying more complex models like Random Forest or Neural Networks.
+
