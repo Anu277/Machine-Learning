@@ -24,4 +24,4 @@ ML/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ML.git
+   git clone https://github.com/yourusername/Machine-Learning.git
